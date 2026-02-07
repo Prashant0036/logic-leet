@@ -64,75 +64,89 @@ Ensuring high availability and better performance.
 
 ## 📁 Project Structure
 
-Directory structure:
-└── prashant0036-logic-leet/
-    ├── backend/
-    │   ├── package.json
-    │   └── src/
-    │       ├── index.js
-    │       ├── config/
-    │       │   ├── db.js
-    │       │   ├── gemini_llm_example.js
-    │       │   └── redis_db.js
-    │       ├── controllers/
-    │       │   ├── solveDoubt.js
-    │       │   ├── userAuthent.js
-    │       │   ├── userProblem.js
-    │       │   ├── userSubmission.js
-    │       │   └── videoSection.js
-    │       ├── middleware/
-    │       │   ├── adminMiddleware.js
-    │       │   └── userMiddleware.js
-    │       ├── models/
-    │       │   ├── problem.js
-    │       │   ├── solutionVideo.js
-    │       │   ├── submission.js
-    │       │   └── user.js
-    │       ├── routes/
-    │       │   ├── aiChatting.js
-    │       │   ├── problemHandler.js
-    │       │   ├── submit.js
-    │       │   ├── userAuth.js
-    │       │   └── videoCreator.js
-    │       └── utils/
-    │           ├── languageUtils.js
-    │           └── Validator.js
-    └── frontend/
-        ├── README.md
-        ├── eslint.config.js
-        ├── index.html
-        ├── package.json
-        ├── vite.config.js
-        ├── .env.production
-        └── src/
-            ├── App.css
-            ├── App.jsx
-            ├── authSlice.js
-            ├── index.css
-            ├── main.jsx
-            ├── assets/
-            │   └── assets.js
-            ├── components/
-            │   ├── AdminCreate.jsx
-            │   ├── AdminDelete.jsx
-            │   ├── AdminUpdate.jsx
-            │   ├── AdminUpdateProblem.jsx
-            │   ├── AdminUpload.jsx
-            │   ├── AdminVideo.jsx
-            │   ├── ChatAi.jsx
-            │   ├── Editorial.jsx
-            │   ├── MakeAdmin.jsx
-            │   └── SubmissionHistory.jsx
-            ├── pages/
-            │   ├── Admin.jsx
-            │   ├── Home.jsx
-            │   ├── Login.jsx
-            │   ├── ProblemPage.jsx
-            │   ├── Signup.jsx
-            │   └── test.js
-            ├── store/
-            │   └── Store.js
-            └── utils/
-                ├── axiosClient.js
-                ├── getProblem.js
-                └── getVideoData.js
+prashant0036-logic-leet/
+│
+├── backend/
+│   ├── package.json
+│   └── src/
+│       ├── index.js              # Entry point
+│       │
+│       ├── config/              # Database & Service Configurations
+│       │   ├── db.js
+│       │   ├── gemini_llm_example.js
+│       │   └── redis_db.js
+│       │
+│       ├── controllers/         # Business Logic
+│       │   ├── solveDoubt.js
+│       │   ├── userAuthent.js
+│       │   ├── userProblem.js
+│       │   ├── userSubmission.js
+│       │   └── videoSection.js
+│       │
+│       ├── middleware/          # Auth & Access Control
+│       │   ├── adminMiddleware.js
+│       │   └── userMiddleware.js
+│       │
+│       ├── models/              # Database Schemas
+│       │   ├── problem.js
+│       │   ├── solutionVideo.js
+│       │   ├── submission.js
+│       │   └── user.js
+│       │
+│       ├── routes/              # API Routes
+│       │   ├── aiChatting.js
+│       │   ├── problemHandler.js
+│       │   ├── submit.js
+│       │   ├── userAuth.js
+│       │   └── videoCreator.js
+│       │
+│       └── utils/               # Helper Functions
+│           ├── languageUtils.js
+│           └── Validator.js
+│
+└── frontend/
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    ├── .env.production
+    │
+    └── src/
+        ├── App.css
+        ├── App.jsx
+        ├── authSlice.js          # Redux Auth State
+        ├── index.css
+        ├── main.jsx
+        │
+        ├── assets/
+        │   └── assets.js
+        │
+        ├── components/          # Reusable Components
+        │   ├── AdminCreate.jsx
+        │   ├── AdminDelete.jsx
+        │   ├── AdminUpdate.jsx
+        │   ├── AdminUpdateProblem.jsx
+        │   ├── AdminUpload.jsx
+        │   ├── AdminVideo.jsx
+        │   ├── ChatAi.jsx
+        │   ├── Editorial.jsx
+        │   ├── MakeAdmin.jsx
+        │   └── SubmissionHistory.jsx
+        │
+        ├── pages/               # Main Pages
+        │   ├── Admin.jsx
+        │   ├── Home.jsx
+        │   ├── Login.jsx
+        │   ├── ProblemPage.jsx
+        │   ├── Signup.jsx
+        │   └── test.js
+        │
+        ├── store/               # Redux Store
+        │   └── Store.js
+        │
+        └── utils/               # API & Utility Functions
+            ├── axiosClient.js
+            ├── getProblem.js
+            └── getVideoData.js
+
